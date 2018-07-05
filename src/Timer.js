@@ -23,6 +23,8 @@ class Timer extends Component {
                 <p>You are on this site Since</p>
                 <br/>
                 <span>{clock}</span>
+                <span>{clock}</span>
+                <span>{clock}</span>
                 <p>Seconds</p>
                 {this.props.start}
             </div>
@@ -30,7 +32,7 @@ class Timer extends Component {
     }
 
     ticker(){
-        this.setState({clock : new Date() - this.props.start})
+        this.setState({clock : new Date() - this.props.start + 10})
     }
 
 }
